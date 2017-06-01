@@ -80,6 +80,17 @@ namespace jarvis
       }
     }
 
+	/// <summary>
+    /// Speaks with a selected voice
+    /// </summary>
+    /// <param name="message"></param>
+    /// <param name="voiceGender"></param>
+    public static void Speak1(string message, VoiceGender voiceGender)
+    {
+      synth.SelectVoiceByHints(voiceGender);
+      synth.Speak(message);
+    }
+	
     /// <summary>
     /// Speaks with a selected voice
     /// </summary>
