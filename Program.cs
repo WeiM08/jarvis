@@ -126,5 +126,13 @@ namespace jarvis
       p1.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
       p1.Start();
     }
+	 public static void OpenWebsite1(string URL)
+    {
+      Process p1 = new Process();
+      p1.StartInfo.FileName = "chrome.exe";
+      p1.StartInfo.Arguments = URL;
+      p1.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+      p1.Start();
+    }
   }
 }
